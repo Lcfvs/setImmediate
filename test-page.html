@@ -16,10 +16,6 @@ function write(message) {
     pre.appendChild(textNode);
 }
 
-setTimeout(function () {
-    write('setTimeout');
-}, 0);
-
 var image = new Image();
 
 image.onerror = function () {
@@ -27,6 +23,10 @@ image.onerror = function () {
 };
 
 image.src = '\0';
+
+setTimeout(function () {
+    write('setTimeout');
+}, 0);
         </script>
     </body>
 </html>
